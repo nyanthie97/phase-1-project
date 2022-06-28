@@ -61,9 +61,16 @@ function displayDescriptions (beer) {
                 var input = $('#input').val();
                 $('.box').append(input + '<br>');
                 $('#input').val('');
+                $('.box-containers').slideDown();
+            });
+            $('#cancel').click(function() {
+                $('#input').val('');
             })
-        
-        })
+            $('#delete').click(function() {
+                $('.box').text('');
+                $('.box-containers').slideUp();
+            })
+        });
     })
 }
 

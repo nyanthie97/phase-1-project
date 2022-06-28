@@ -58,6 +58,7 @@ body div{
     box-shadow: 0 5px 15px #111;
     border-radius: 5px;
     padding: 15px;
+    display: none;
 }
 .box-containers .box {
  height: 80%;
