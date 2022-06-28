@@ -56,7 +56,14 @@ function displayDescriptions (beer) {
 
             localStorage.setItem('template', document.getElementById('allComments').innerHTML);
     
+        $(document).ready(function(){
+            $('#comment').click(function() {
+                var input = $('#input').val();
+                $('.box').append(input + '<br>');
+                $('#input').val('');
+            })
         
+        })
     })
 }
 
