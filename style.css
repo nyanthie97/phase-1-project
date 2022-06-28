@@ -89,5 +89,9 @@ button {
     cursor: pointer;
     margin: 10px 0;
     font-size: 15px;
-
+    box-shadow: 0 3px 10px #111;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: .8;
 }
