@@ -10,17 +10,18 @@
     <script type="text/javascript" src="./index.js"></script>
 
 </head>
+
 <body>
 
     <div class="container">
         <h3>Beers</h3>
         <div class="list">
             <ul id="beer-lists">
-                
+
             </ul>
         </div>
     </div>
-    
+
     <div class="poster">
         <img id="beer-image">
     </div>
@@ -28,14 +29,19 @@
         <h2 id="beer-title"></h2>
         <p id="details"></p>
         <img id="like">
-        <div class="container">
-            <label for="newComment" name="newComment">Add your comment below-</label>
-            <textarea id="newComment"></textarea>
-            <button id="addComments">submits Comment</button>
-            <div id="allComments"></div>
+        <div class="containers">
+            <input type="text" id="input" placeholder="write your comment here..">
+            <button type="button" name="button" id="cancel">cancel</button>
+            <button type="button" name="button" id="comment">comment</button>
+        
+            <div class="box-containers">
+                <div class="box">
+                    <button type="button" name="button" id="delete">delete</button>
+                </div>
+            </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
