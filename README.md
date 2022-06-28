@@ -8,4 +8,8 @@ It has events listeners that incorporate with the site
 
 It consist front-end that that is fetch to interact with the public API that has json details.
 
+this site consist of comment box whereby you will drop the comment you like when you feel like.
 
+
+
+ON THE SITE UPLOAD FROM LOCAL TO GITHUB
