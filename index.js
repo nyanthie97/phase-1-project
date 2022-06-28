@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    
- getBeerData()
- 
+
+    getBeerData()
+
 })
 
 
 
 function getBeerData() {
-       
+
     fetch('https://api.punkapi.com/v2/beers/')
         .then(response => {
             return response.json()
@@ -17,11 +17,11 @@ function getBeerData() {
             console.log(data)
             displayBeerLists(data)
             displayDescriptions(data[0])
-            
+
         })
         .catch(error => console.log(error))
 }
-function displayBeerLists (beers) {
+function displayBeerLists(beers) {
     const beerLists = document.getElementById('beer-lists')
     beers.forEach(beer => {
         const li = document.createElement('li')
@@ -30,11 +30,11 @@ function displayBeerLists (beers) {
         li.addEventListener('click', () => {
             displayDescriptions(beer)
         })
-        
+
     })
 }
 
-function displayDescriptions (beer) {
+function displayDescriptions(beer) {
     const description = document.querySelector('.description')
     const image = document.getElementById('beer-image')
     const name = document.getElementById('beer-title')
@@ -44,34 +44,33 @@ function displayDescriptions (beer) {
     details.innerText = beer.description
     const like = document.getElementById('like')
     like.src = './empty.png'
-    let isRed = false 
+    let isRed = false
     like.addEventListener('click', () => {
-        if (! isRed) {
+        if (!isRed) {
             like.src = './red.png'
             isRed = true
-        } else{
+        } else {
             like.src = './empty.png'
             isRed = false
         }
 
-            localStorage.setItem('template', document.getElementById('allComments').innerHTML);
-    
-        $(document).ready(function(){
-            $('#comment').click(function() {
-                var input = $('#input').val();
-                $('.box').append(input + '<br>');
-                $('#input').val('');
-                $('.box-containers').slideDown();
-            });
-            $('#cancel').click(function() {
-                $('#input').val('');
-            })
-            $('#delete').click(function() {
-                $('.box').text('');
-                $('.box-containers').slideUp();
-            })
-        });
+
     })
 }
 
+$(document).ready(function () {
+    $('#comment').click(function () {
+        var input = $('#input').val();
+        $('.box').append(input + '<br>');
+        $('#input').val('');
+        $('.box-containers').slideDown();
+    });
+    $('#cancel').click(function () {
+        $('#input').val('');
+    })
+    $('#delete').click(function () {
+        $('.box').text('');
+        $('.box-containers').slideUp();
+    })
+});
 
