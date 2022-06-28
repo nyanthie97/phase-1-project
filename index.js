@@ -53,9 +53,11 @@ function displayDescriptions (beer) {
             like.src = './empty.png'
             isRed = false
         }
-      
+
+            localStorage.setItem('template', document.getElementById('allComments').innerHTML);
+    
+        
     })
 }
-
 
 
