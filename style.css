@@ -50,14 +50,22 @@ body div{
     outline: none;
     letter-spacing: 2px;
 
-
-
 }
-.box-container {
+.box-containers {
     height: 200px;
     width: 100%;
     background: #444;
     box-shadow: 0 5px 15px #111;
     border-radius: 5px;
     padding: 15px;
+}
+.box-containers .box {
+ height: 80%;
+ width: 100%;
+ border-radius: 5px;
+ padding: 10px;
+ background: #f45;
+ overflow-y: auto;
+ text-align: left;
+ 
 }
