@@ -45,14 +45,21 @@ body div{
 #comment-box {
     border: none;
     border-radius: 5px;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 2px;
     
 }
 #post {
     border: none;
     border-radius: 5px;  
+    margin-left: 30%;
+    margin-top: 20px;
+    
 }
 #post:hover{
     background-color: #b48238;
+}
+#unordered {
+    margin-left: 30%;
 }
