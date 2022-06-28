@@ -84,4 +84,10 @@ body div{
 button {
     height: 30px;
     width: 100%;
+    background-color: #f45;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 15px;
+
 }
